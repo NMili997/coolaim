@@ -10,7 +10,9 @@ export default class Logout extends  Component{
     return (
       <div>
         <h1>U have been logout</h1>
-        <Link to="/">LogIn Again</Link>
+        <Link to="/">
+          <button>Please Login Again</button>
+        </Link>
       </div>
     );
   }

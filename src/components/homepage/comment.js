@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../../App.css";
+import {Link} from "react-router-dom";
 
 function Comment({ match }) {
   console.log(match);
@@ -23,6 +24,9 @@ function Comment({ match }) {
   return (
     <div className="navPosts">
       <div className="comments">{comments.body}</div>
+      <Link to="/admin">
+        <button>Back on admin page</button>
+      </Link>
     </div>
   );
 }
