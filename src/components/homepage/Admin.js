@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { Redirect } from "react-router-dom";
 import "../../App.css";
+import Post from "./post";
+import Nav from "./nav";
 
 export default class Admin extends Component {
   constructor(props) {
@@ -21,15 +23,11 @@ export default class Admin extends Component {
       return <Redirect to="/" />;
     }
     return (
-      <nav>
-        <h1>Welcome to the page</h1>
-        <div className="btnLogout">
-          <Link to="/logout">
-            <button>Logout</button>
-          </Link>
-        </div>
-      </nav>
-    
+      <div>
+      <Nav />
+      <Post />
+      </div>
+
     );
   }
 }

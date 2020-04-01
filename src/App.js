@@ -5,6 +5,7 @@ import Login from "./components/Login";
 import Admin from "./components/homepage/Admin";
 import Logout from "./components/Logout";
 import "./App.css";
+import Comment from "./components/homepage/comment";
 
 class App extends Component {
   render() {
@@ -12,12 +13,13 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path="/" component={Login} />
-          <Route path="/admin" component={Admin} />
-          <Route path="/logout" component={Logout} />
+          <Route exact path="/admin" component={Admin} />
+          <Route exact path="/logout" component={Logout} />
+          <Route path="/comment/:id" component={Comment} />
+
         </Switch>
       </Router>
     );
   }
 }
-
 export default App;
