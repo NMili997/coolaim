@@ -1,5 +1,7 @@
 import React , {Component} from "react";
 import { Redirect } from "react-router-dom";
+import loadImg from "../login.svg";
+import "./style.scss";
 
 export default class Login extends Component{
   constructor(props){
@@ -40,15 +42,17 @@ export default class Login extends Component{
       return <Redirect to="/admin" />;
     }
     return (
-      <div>
-        <h1>Login</h1>
-
+      <div className="baseContainer" >
+        <div className="header">Login</div>
+        <div className="image">
+          <img src={loadImg} alt="loginPicture" />
+        </div>
         <form onSubmit={this.submitForm}>
           <input type="text" placeholder="username" name="username" value={this.state.username} onChange={this.onChange}></input>
           <br />
           <input type="password" placeholder="password" name="password" value={this.state.password} onChange={this.onChange}></input>
           <br />
-          <input type="submit"></input>
+          <button type="submit">Submit</button>
         </form>
       </div>
     );
