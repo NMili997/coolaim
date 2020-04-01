@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Login from "./components/Login";
-import Admin from "./components/Admin";
+import Admin from "./components/homepage/Admin";
 import Logout from "./components/Logout";
+import "./App.css";
 
 class App extends Component {
   render() {
