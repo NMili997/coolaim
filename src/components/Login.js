@@ -43,7 +43,7 @@ export default class Login extends Component{
     }
     return (
       <div className="baseContainer" >
-        <div className="header">Login</div>
+        <div className="header">Hello</div>
         <div className="image">
           <img src={loadImg} alt="loginPicture" />
         </div>
