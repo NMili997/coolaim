@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/coolaim/static/css/main.8cef392d.chunk.css",
-    "main.js": "/coolaim/static/js/main.622d1ee6.chunk.js",
-    "main.js.map": "/coolaim/static/js/main.622d1ee6.chunk.js.map",
+    "main.js": "/coolaim/static/js/main.fa82eac3.chunk.js",
+    "main.js.map": "/coolaim/static/js/main.fa82eac3.chunk.js.map",
     "runtime-main.js": "/coolaim/static/js/runtime-main.30662885.js",
     "runtime-main.js.map": "/coolaim/static/js/runtime-main.30662885.js.map",
-    "static/js/2.4af48f9f.chunk.js": "/coolaim/static/js/2.4af48f9f.chunk.js",
-    "static/js/2.4af48f9f.chunk.js.map": "/coolaim/static/js/2.4af48f9f.chunk.js.map",
+    "static/js/2.96844587.chunk.js": "/coolaim/static/js/2.96844587.chunk.js",
+    "static/js/2.96844587.chunk.js.map": "/coolaim/static/js/2.96844587.chunk.js.map",
     "index.html": "/coolaim/index.html",
-    "precache-manifest.d9f950afba74baaa984ca4f242dfe7d9.js": "/coolaim/precache-manifest.d9f950afba74baaa984ca4f242dfe7d9.js",
+    "precache-manifest.d196a2389a515c31b17b777c1c892d1f.js": "/coolaim/precache-manifest.d196a2389a515c31b17b777c1c892d1f.js",
     "service-worker.js": "/coolaim/service-worker.js",
     "static/css/main.8cef392d.chunk.css.map": "/coolaim/static/css/main.8cef392d.chunk.css.map",
-    "static/js/2.4af48f9f.chunk.js.LICENSE.txt": "/coolaim/static/js/2.4af48f9f.chunk.js.LICENSE.txt",
+    "static/js/2.96844587.chunk.js.LICENSE.txt": "/coolaim/static/js/2.96844587.chunk.js.LICENSE.txt",
     "static/media/login.svg": "/coolaim/static/media/login.85002715.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.30662885.js",
-    "static/js/2.4af48f9f.chunk.js",
+    "static/js/2.96844587.chunk.js",
     "static/css/main.8cef392d.chunk.css",
-    "static/js/main.622d1ee6.chunk.js"
+    "static/js/main.fa82eac3.chunk.js"
   ]
 }

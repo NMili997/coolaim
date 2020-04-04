@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7bd552b9dedaf1c4ea9169108cc2d482",
+    "revision": "8b3a97c92de5b11e31894ad127f0c652",
     "url": "/coolaim/index.html"
   },
   {
-    "revision": "21871a6903fc6b71938c",
+    "revision": "f0e05a3c544c7661feed",
     "url": "/coolaim/static/css/main.8cef392d.chunk.css"
   },
   {
-    "revision": "a64513096f80e1350490",
-    "url": "/coolaim/static/js/2.4af48f9f.chunk.js"
+    "revision": "e75b6acfb23071a75147",
+    "url": "/coolaim/static/js/2.96844587.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/coolaim/static/js/2.4af48f9f.chunk.js.LICENSE.txt"
+    "revision": "4bf00ea42f5dad8ab33d5f32afec9baf",
+    "url": "/coolaim/static/js/2.96844587.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "21871a6903fc6b71938c",
-    "url": "/coolaim/static/js/main.622d1ee6.chunk.js"
+    "revision": "f0e05a3c544c7661feed",
+    "url": "/coolaim/static/js/main.fa82eac3.chunk.js"
   },
   {
     "revision": "5c93480204cecdb57a52",
