@@ -3,21 +3,14 @@ import { Redirect } from "react-router-dom";
 import "./style.scss";
 import loadImg from "../login.svg";
 
+const token = localStorage.getItem("token");
 export default class Login extends Component {
-  constructor(props) {
-    super(props);
-    const token = localStorage.getItem("token");
-
-    let loggedIn = true;
-    if (token == null) {
-      loggedIn = false;
-    }
-    this.state = {
+    state = {
       username: "",
       password: "",
-      loggedIn
+      loggedIn:""
     };
-  }
+  loggedIn = token == null ? false : true;
   onChange = e => this.setState({ [e.target.name]: e.target.value });
   submitForm = e => {
     e.preventDefault();
