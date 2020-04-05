@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "../../App.css";
 import { Link } from "react-router-dom";
+import "../../App.css";
 
 function Post() {
   useEffect(() => {
@@ -11,8 +11,6 @@ function Post() {
   const fetchItems = async () => {
     const data = await fetch("https://bl0gpostapi.herokuapp.com/posts");
     const items = await data.json();
-
-    console.log(items);
     setUsers(items);
   };
 
@@ -20,9 +18,7 @@ function Post() {
     <div className="buttonHit">
       {items.map(item => (
         <Link className="linkNav" key={item._id} to={`/comment/${item._id}`}>
-        <button className="navPosts" >
-            {item.username}
-          </button>
+          <button className="navPosts">{item.username}</button>
         </Link>
       ))}
     </div>

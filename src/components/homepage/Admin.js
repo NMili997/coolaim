@@ -25,12 +25,11 @@ export default class Admin extends Component {
     }
     return (
       <div>
-      <MeidaQueri minDeviceWidth={XS + 1}>
-      <Nav />
-      <Post />
-      </MeidaQueri>
+        <MeidaQueri minDeviceWidth={XS + 1}>
+          <Nav />
+          <Post />
+        </MeidaQueri>
       </div>
-
     );
   }
 }
