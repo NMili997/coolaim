@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import MeidaQueri from "react-responsive";
 import { Redirect } from "react-router-dom";
-import "../../App.css";
-import Post from "./post";
-import Nav from "./nav";
+import "../App.css";
+import Post from "../components/homepage/post.js";
+import Nav from "../components/homepage/nav.js";
 const XS = 576;
 
 export default class Admin extends Component {
