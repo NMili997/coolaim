@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { Redirect } from "react-router-dom";
 import "./style.scss";
 import loadImg from "../login.svg";
 
@@ -25,7 +24,8 @@ export default class Login extends Component {
 
   render() {
     if (this.state.loggedIn) {
-      return <Redirect to="/admin" />;
+      //fix me: this.props.history.push('/admin'); should be here
+      this.props.history.push('/admin');
     }
     return (
       <div className="baseContainer">

@@ -1,15 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import {Result , Button } from "antd";
+import "./styles.css"
 function Logout() {
   localStorage.removeItem("token");
   return (
-    <div>
-      <h1>U have been logout</h1>
+    <div className="Logout">
+    <Result
+      status="403"
+      subTitle="Sorry,you are not logged in"
+      />
+      <br />
       <Link to="/coolaim">
-        <button>Please Login Again</button>
+      <Button style={{color: "blue"}}>Back on log in</Button>
       </Link>
-    </div>
+      </div>
   );
 }
 export default Logout;
