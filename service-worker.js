@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/coolaim/precache-manifest.46e0953b5c70c0a540e80cc8eb86e422.js"
+  "/coolaim/precache-manifest.748caee51fbbc09295791572693ebce8.js"
 );
 
 self.addEventListener('message', (event) => {
