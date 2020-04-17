@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../../App.css";
+import {API_URL} from "../../env.json";
 
 function Post() {
   useEffect(() => {
     fetchItems();
   }, []);
-
   const [items, setUsers] = useState([]);
   const fetchItems = async () => {
-    const data = await fetch("https://bl0gpostapi.herokuapp.com/posts");
+    const data = await fetch(`${API_URL}/posts`);
     const items = await data.json();
     setUsers(items);
   };

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, Redirect } from "react-router-dom";
 import "../../App.css";
+import {API_URL} from "../../env.json";
+
 
 function Comment({ match }) {
   const token = localStorage.getItem("token");
@@ -8,6 +10,7 @@ function Comment({ match }) {
     dataOfComment = [];
   useEffect(() => {
     fetchItem();
+    //eslint-disable-next-line
   },[]);
   if (token == null) {
     loggedIn = false;
@@ -15,7 +18,8 @@ function Comment({ match }) {
   const [comments, setComment] = useState({});
   const fetchItem = async () => {
     const fetchItem = await fetch(
-      `https://bl0gpostapi.herokuapp.com/comments?_Id=${match.params.id}`
+      `${API_URL}/comments?_Id=${match.params.id}`
+      // `https://bl0gpostapi.herokuapp.com/comments?_Id=${match.params.id}`
     );
     const comments = await fetchItem.json();
     for (dataOfComment in comments) {
